@@ -215,16 +215,22 @@ const Navbar = () => {
 const Footer = () => {
   return (
     
-    <div className='flex items-center justify-around px-4 gap-3 lg:px-44 py-3 mt-20'>
-        <h1 className="text-base font-bold md:text-2xl">🩺 AIHealthAssis</h1>
-        <p className='flex-1 pl-4 text-sm text-gray-500 max-sm:hidden'>Copyright @Vedang.dev | All right reserved.</p>
-        <div className='flex gap-1 lg:ml-170 md:ml-50 sm:ml-20'>
-            <img width={40} src={"/facebook_icon.svg"} alt="" />
-            
-            <img  width={40} src={"/twitter_icon.svg"} alt="" />
-            
-            <img width={40} src={"/google_plus_icon.svg"} alt="" />
-        </div>
-    </div>
+    <div className="flex flex-wrap items-center justify-between px-4 py-4 lg:px-44 border-t">
+  {/* Left: Logo and Text */}
+  <div className="flex items-center space-x-2">
+    <h1 className="text-base font-bold md:text-2xl">🩺 AIHealthAssis</h1>
+    <p className="text-sm text-gray-500 whitespace-nowrap">
+      © {new Date().getFullYear()} @Vedang.dev | All rights reserved.
+    </p>
+  </div>
+
+  {/* Right: Social Icons */}
+  <div className="flex space-x-3 mt-2 lg:mt-0">
+    <img width={32} src="/facebook_icon.svg" alt="Facebook" className="rounded-full shadow-sm cursor-pointer" />
+    <img width={32} src="/twitter_icon.svg" alt="Twitter" className="rounded-full shadow-sm cursor-pointer" />
+    <img width={32} src="/google_plus_icon.svg" alt="Google+" className="rounded-full shadow-sm cursor-pointer" />
+  </div>
+</div>
+
   )
 };
