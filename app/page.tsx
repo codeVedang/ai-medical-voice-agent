@@ -215,7 +215,7 @@ const Navbar = () => {
 const Footer = () => {
   return (
     
-    <div className="flex flex-wrap items-center justify-between px-4 py-4 lg:px-44 border-t mt-20">
+    <div className="flex flex-wrap gap-5 items-center justify-between px-4 py-4 lg:px-44 border-t mt-20">
   {/* Left: Logo and Text */}
   <div className="flex items-center space-x-2">
     <h1 className="text-base font-bold md:text-2xl">🩺 AIHealthAssis</h1>
