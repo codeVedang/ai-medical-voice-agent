@@ -219,7 +219,7 @@ const Footer = () => {
   {/* Left: Logo and Text */}
   <div className="flex items-center space-x-2">
     <h1 className="text-base font-bold md:text-2xl">🩺 AIHealthAssis</h1>
-    <p className="text-sm text-gray-500 whitespace-nowrap md:hidden">
+    <p className="text-sm text-gray-500 whitespace-nowrap md:block">
       © {new Date().getFullYear()} @Vedang.dev | All rights reserved.
     </p>
   </div>
